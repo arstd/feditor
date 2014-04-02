@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexible Editor</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/bootstrap-3.1.1/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/bootstrap-3.1.1/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="/feditor.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="left">
+                    <ul id="sider">
+                        <li>
+                            <a href="#" data-Path="/" data-IsDir="true" >File System &lt;Root&gt;</a>
+                        </li>
+                    </ul>
+                </td>
+                <td class="middle">
+                    <textarea id="linenum" cols="4"></textarea>
+                </td>
+                <td class="right">
+                    <textarea id="content" contenteditable></textarea>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="/jquery/2.1.0/jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+        <script src="/feditor.js"></script>
+    </body>
+</html>

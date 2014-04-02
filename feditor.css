@@ -1,0 +1,99 @@
+html, body {
+	height: 100%;
+	font-family: monospace;
+	overflow: hidden;
+}
+table {
+	background: #f5f5f5;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+td {
+	height: 100%;
+	overflow: hidden;
+}
+.left {
+	width: 30%;
+	max-width: 300px;
+}
+.middle {
+	width: 0;
+}
+#sider {
+	height: 100%;
+	overflow: auto;
+}
+#sider ul {
+	padding-left: 20px;
+}
+#sider a {
+	white-space:nowrap;
+	padding: 0 3px;
+	display: block;
+}
+#sider a:hover {
+	background-color: #d3d3d3;
+}
+#sider a.current {
+	color: #f00;
+}
+#sider {
+	margin: 10px 0;
+}
+#linenum, #content{
+	margin: 0;
+	border: 0;
+	outline: 0;
+}
+#linenum {
+	width: 0;
+	padding: 0;
+	text-align: right;
+	height: 100%;
+	overflow: hidden;
+}
+#content {
+	padding: 5px;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+/**********************/
+/*ie滚动条样式*/
+* {
+	scrollbar-arrow-color: rgb(200,200,200);	/*ok-上下三角箭头*/
+	scrollbar-3dlight-color: rgb(200,200,200);	/*ok-3d滑块左上角高光部分颜色*/
+	scrollbar-highlight-color: rgb(200,200,200);	/*ok-滑块左上角高光部分颜色*/
+	scrollbar-shadow-color: rgb(200,200,200);	/*ok*/
+	scrollbar-darkshadow-color: rgb(200,200,200);	/*ok-以上都是定义一些阴影高光等3D效果*/
+	scrollbar-face-color: rgb(200,200,200);		/*ok-滑块*/
+	scrollbar-track-color: rgb(240,240,240);	/*ok-滑道*/
+}
+/*chrome滚动条样式*/
+::-webkit-scrollbar {/*滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。*/
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-button {/*滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。*/
+	display: none;
+}
+::-webkit-scrollbar-track {/*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。*/
+	display: none;
+}
+::-webkit-scrollbar-track-piece {/*内层轨道，滚动条中间部分（除去）。*/
+	background: rgb(240,240,240);
+}
+::-webkit-scrollbar-thumb {/*滚动条里面可以拖动的那部分*/
+	background: rgb(200,200,200);
+}
+::-webkit-scrollbar-thumb:hover {/*滚动条里面可以拖动的那部分*/
+	background: rgb(180,180,180);
+}
+::-webkit-scrollbar-corner {/*边角*/
+	background: rgb(200,200,200);
+}
+::-webkit-scrollbar-resizer {/*定义右下角拖动块的样式*/
+	background: rgb(200,200,200);
+}

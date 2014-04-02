@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dir=`dirname $(readlink -f $0)`
+export GOPATH=$dir
+cd  $dir
+go run main.go &
